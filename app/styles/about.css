@@ -1,0 +1,48 @@
+.about-container {
+  position: relative;
+  height: 24rem;
+  background-color: #1f1f1fff;
+  z-index: 2;
+  padding: 0 15rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-container h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.3rem;
+  padding-top: 2rem;
+}
+.about-container p {
+  font-size: 0.9rem;
+  width: 48vw;
+  text-align: center;
+  color: rgb(175, 175, 175);
+}
+.about-semi-circle {
+  position: absolute;
+  bottom: 0;
+  width: 10rem;
+  height: 2rem;
+}
+.about-count {
+  display: flex;
+}
+.about-number {
+  font-size: 2.3rem;
+  font-weight: 600;
+  margin-top: 1.6rem;
+  color: #ffd3d0ff;
+}
+.about-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20vw;
+}
+.about-title {
+  font-size: 0.8rem;
+}

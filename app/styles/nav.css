@@ -1,0 +1,35 @@
+nav {
+  position: relative;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffd3d0ff;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 0 8rem;
+}
+.nav-section {
+  display: flex;
+  z-index: 2;
+}
+.nav-section div {
+  margin: 0 1rem;
+}
+.nav-logo span {
+  color: #fc462aff;
+  margin-left: -0.3rem;
+  font-size: 110%;
+}
+.nav-btn {
+  background-color: #1f1f1fff;
+  border: 0.1rem solid #937c7aff;
+  color: #fff;
+  padding: 0.5rem 1.4rem;
+}
+.nav-semi-circle {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 31vw;
+}
