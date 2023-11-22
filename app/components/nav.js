@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Nav() {
+  // will work on animation
   return (
     <nav id="nav">
       <div className="nav-logo">
