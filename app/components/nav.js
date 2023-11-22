@@ -23,7 +23,7 @@ export default function Nav() {
         </Link>
       </div>
       <div className="nav-btn">
-        <button>Let's Talk</button>
+        <button>Let&rsquo;s Talk</button>
       </div>
       <Image
         src="/assets/semi-circle.png"
