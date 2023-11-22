@@ -5,7 +5,7 @@ export default function Banner() {
     <div id="banner" className="banner-container">
       <div className="banner-text">
         <div className="banner-role">FrontEnd Developer</div>
-        <div className="banner-intro">Hi There, I'm</div>
+        <div className="banner-intro">Hi There, I&rsquo;m</div>
         <div className="banner-name">Israel Nwangwu</div>
         <div className="banner-cta">
           Welcome to my showcase of immersive digital experiences. Dive into my
