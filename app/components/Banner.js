@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Banner() {
   return (
@@ -15,7 +16,10 @@ export default function Banner() {
         </div>
         <div className="banner-cta-btn">
           <button className="banner-hire-me">Hire Me</button>
-          <button className="banner-resume">Resume</button>
+          <a href="/CV/Israel-Nwangwu.pdf" download="Israel_Nwangwu_CV.pdf">
+            {" "}
+            <button className="banner-resume">Resume</button>
+          </a>
         </div>
       </div>
       <div className="banner-image-container">

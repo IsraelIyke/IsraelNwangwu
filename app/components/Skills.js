@@ -3,39 +3,33 @@ import SkillsCard from "./SkillsCard";
 const card = [
   {
     id: 1,
-    img: "/images/telectify.png",
-    title: "Internet of Things Platform",
-    link: "https://telectify.vercel.app/",
+    title: "HTML, CSS and Javascript",
+    percent: 90,
   },
   {
     id: 2,
-    img: "/images/ezynotify.png",
-    title: "Notification Platform",
-    link: "https://ezynotify.pages.dev/",
+    title: "React and Next js",
+    percent: 95,
   },
   {
     id: 3,
-    img: "/images/varlc.png",
-    title: "Educational Platform",
-    link: "https://www.varlc.com/",
+    title: "Tailwind and Bootstrap",
+    percent: 76,
   },
   {
     id: 4,
-    img: "/images/dev.png",
-    title: "Profile Generator Platform",
-    link: "https://dp-gen-devfest.vercel.app/",
+    title: "Git and Github",
+    percent: 84,
   },
   {
     id: 5,
-    img: "/images/cv.png",
-    title: "CV Generator Platform",
-    link: "https://resume-eta-dusky.vercel.app/account",
+    title: "Collaboration and Problem Solving",
+    percent: 64,
   },
   {
     id: 6,
-    img: "/images/google.png",
-    title: "Advanced Google Platform",
-    link: "/https://google-like-a-pro.vercel.app/",
+    title: "Responsive design",
+    percent: 90,
   },
 ];
 export default function Skills() {
@@ -52,8 +46,7 @@ export default function Skills() {
         {card.map((items) => (
           <SkillsCard
             key={items.id}
-            img={items.img}
-            link={items.link}
+            percent={items.percent}
             title={items.title}
           />
         ))}
