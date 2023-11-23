@@ -45,12 +45,20 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columns */
 }
-
+.portfolio-card-image-container {
+  position: relative;
+  max-width: 14rem;
+  max-height: 9rem;
+  overflow: hidden;
+}
 .portfolio-card-image {
   position: relative;
-  width: 14rem;
-  height: 9rem;
-  background-color: white;
+  width: 100%;
+  height: 100%;
+}
+.portfolio-card-image:hover {
+  object-fit: cover;
+  scale: 1.2;
 }
 .portfolio-card-text {
   display: flex;
