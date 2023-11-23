@@ -30,7 +30,7 @@
   color: rgb(72, 72, 72);
   margin-top: 1rem;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: -1rem;
 }
 
 .portfolioCard {
@@ -38,6 +38,7 @@
   width: 14rem;
   height: 9rem;
   margin: 1.5rem;
+  margin-top: 3rem;
 }
 
 .portfolio-grid {
@@ -54,6 +55,7 @@
 .portfolio-card-text {
   display: flex;
   justify-content: space-between;
+  margin: 0.7rem 0 1rem 0;
 }
 .portfolio-link {
   font-size: 1.4rem;
@@ -61,7 +63,7 @@
 }
 .portfolio-card-text h3 {
   font-weight: 600;
-  font-size: 0.92rem;
+  font-size: 0.9rem;
 }
 /* @media (max-width: 768px) {
   .portfolio-grid {
