@@ -28,7 +28,7 @@ export default function Newsletter() {
         <div className="newsletter-contact">
           <div>
             <BiSolidPhoneCall />
-            <p>+234703 1658 331</p>
+            <p>+234 703 1658 331</p>
           </div>
           <div>
             <MdEmail />

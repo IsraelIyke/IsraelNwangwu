@@ -11,6 +11,7 @@
   /* font-family: Neon; */
   outline: none;
   scroll-behavior: smooth;
+  /* outline: 1px solid limegreen; */
 }
 
 ::-webkit-scrollbar {
