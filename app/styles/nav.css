@@ -21,6 +21,9 @@ nav {
   margin-left: -0.3rem;
   font-size: 110%;
 }
+.nav-logo {
+  z-index: 5;
+}
 .nav-btn {
   background-color: #1f1f1fff;
   border: 0.1rem solid #937c7aff;
@@ -32,4 +35,64 @@ nav {
   z-index: 1;
   top: 0;
   left: 31vw;
+}
+.desktop {
+  display: none;
+}
+.moving-div {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  nav {
+    height: 4rem;
+    font-size: 0.9rem;
+    padding: 0 1rem;
+  }
+  .nav-menu {
+    font-size: 1.6rem;
+    margin-left: auto;
+    z-index: 5;
+  }
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: block;
+  }
+  .nav-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .moving-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 35svh;
+    background-color: rgba(255, 211, 208, 0.681);
+    position: absolute;
+    left: 0;
+    top: -37svh;
+    transition: top 0.5s ease;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    z-index: 4;
+  }
+
+  .moving-div.moved {
+    top: calc(11svh - 100px);
+  }
+  .nav-section a {
+    margin: 0.3rem 0;
+  }
+  .nav-btn {
+    margin-top: 1rem;
+    padding: 0.5rem 5rem;
+    font-size: 0.8rem;
+    border: 1px solid white;
+  }
 }

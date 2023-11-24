@@ -46,3 +46,27 @@
 .about-title {
   font-size: 0.8rem;
 }
+
+@media screen and (max-width: 768px) {
+  .about-container {
+    height: 29rem;
+    padding: 0 1rem;
+  }
+  .about-container p {
+    font-size: 0.8rem;
+    width: 90vw;
+    text-align: center;
+    color: rgb(175, 175, 175);
+  }
+  .about-card-container {
+    width: 32vw;
+    z-index: 1;
+  }
+  .about-title {
+    font-size: 0.7rem;
+    text-align: center;
+  }
+  .about-number {
+    font-size: 2rem;
+  }
+}

@@ -8,10 +8,8 @@
   padding: 0;
   margin: 0;
   -webkit-tap-highlight-color: transparent;
-  /* font-family: Neon; */
   outline: none;
   scroll-behavior: smooth;
-  /* outline: 1px solid limegreen; */
 }
 
 ::-webkit-scrollbar {

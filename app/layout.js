@@ -3,7 +3,6 @@ import "./globals.css";
 import "./styles/nav.css";
 import "./styles/banner.css";
 import "./styles/about.css";
-import "./styles/services.css";
 import "./styles/portfolio.css";
 import "./styles/skills.css";
 import "./styles/testimonial.css";

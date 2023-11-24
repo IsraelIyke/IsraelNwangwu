@@ -1,7 +1,7 @@
 .insights {
   background-color: #f7f7f7ff;
   position: relative;
-  height: 38rem;
+  height: 70rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,4 +57,21 @@
   left: 1rem;
   font-size: 0.8rem;
   font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .insights p {
+    width: 80vw;
+    font-size: 0.85rem;
+  }
+  .insights-container {
+    flex-direction: column;
+  }
+  .insight-card {
+    position: relative;
+    height: 18rem;
+    width: 80vw;
+    background-color: white;
+    margin: 0.5rem;
+  }
 }

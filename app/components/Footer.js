@@ -6,13 +6,18 @@ export default function Footer() {
   return (
     <footer id="footer">
       <div className="footer-nav">
+        <Link href="#" className="desktop">
+          <div className="footer-logo">
+            Ezy<span>Sphere</span>
+          </div>
+        </Link>
         <Link href="#About">
           <div>About</div>
         </Link>
         <Link href="#Services">
           <div>Services</div>
         </Link>
-        <Link href="#">
+        <Link href="#" className="mobile">
           <div className="footer-logo">
             Ezy<span>Sphere</span>
           </div>

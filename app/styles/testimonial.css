@@ -9,13 +9,14 @@
 }
 .testimonial-semi-circle {
   position: absolute;
-  z-index: 1;
+  z-index: 0;
   top: 0;
 }
 
 .testimonial h2 {
   font-size: 1.4rem;
   font-weight: 600;
+  z-index: 1;
 }
 .testimonialSlider {
   text-align: center;
@@ -71,4 +72,24 @@
 .testimonial-image {
   border-radius: 2rem;
   margin-right: 0.7rem;
+}
+
+@media (max-width: 768px) {
+  .arrowButton {
+    font-size: 2rem;
+  }
+  .next {
+    margin-right: 0rem;
+    margin-left: 0rem;
+  }
+  .prev {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+  .slide p {
+    font-size: 0.8rem;
+  }
+  .testimonial {
+    height: 15rem;
+  }
 }

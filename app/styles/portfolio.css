@@ -73,8 +73,18 @@
   font-weight: 600;
   font-size: 0.9rem;
 }
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   .portfolio-grid {
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr);
   }
-} */
+  .portfolioCard {
+    position: relative;
+    width: 10rem;
+    height: 9rem;
+    margin: 0.5rem;
+    margin-top: 3rem;
+  }
+  .portfolio {
+    margin-bottom: 8rem;
+  }
+}

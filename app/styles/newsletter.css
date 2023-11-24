@@ -72,3 +72,33 @@
   padding: 0.4rem;
   border-radius: 1rem;
 }
+
+@media (max-width: 768px) {
+  .newsletter {
+    height: 46rem;
+    flex-direction: column;
+    padding: 2rem 3rem;
+    text-align: center;
+  }
+  .newsletter-cta p {
+    position: relative;
+    font-size: 0.8rem;
+    margin: 0.6rem 0 1rem 0;
+    color: rgb(59, 59, 59);
+    z-index: 2;
+  }
+  .newsletter-contact div {
+    margin: 0.4rem 0;
+  }
+  .newsletter-contact p {
+    font-size: 0.7rem;
+  }
+  .newsletter-social {
+    margin-top: 2rem;
+  }
+  .newsletter-input input {
+    height: 2.4rem;
+    width: 90vw;
+    margin: 0.4rem 0;
+  }
+}

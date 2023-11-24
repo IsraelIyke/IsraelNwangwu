@@ -9,7 +9,7 @@ export default function InsightCard(items) {
         <h5>{items.date}</h5>
         <h3>{items.title}</h3>
         <Link href={items.link}>
-          <button>Read More &gt;</button>
+          <button>Watch Video &gt;</button>
         </Link>
       </div>
     </div>
