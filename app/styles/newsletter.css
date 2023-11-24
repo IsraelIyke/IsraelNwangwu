@@ -1,9 +1,17 @@
 .newsletter {
+  position: relative;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: 30rem;
   background-color: #ffd3d0ff;
   padding: 3rem 10rem;
+}
+.newsletter-semi-circle {
+  position: absolute;
+  width: 4rem;
+  height: 8rem;
+  left: -0.3rem;
 }
 .newsletter-input {
   display: flex;

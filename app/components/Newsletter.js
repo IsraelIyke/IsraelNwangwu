@@ -11,17 +11,18 @@ export default function Newsletter() {
   return (
     <div id="newsletter" className="newsletter">
       <Image
-        src="/assets/semi-circle.png"
+        src="/assets/semi-circle3.png"
         alt="semi-circle"
-        width={100}
-        height={100}
-        className="testimonial-semi-circle"
+        width={500}
+        height={500}
+        className="newsletter-semi-circle"
       />
       <div>
         <div className="newsletter-cta">
           <h3>Get in Touch</h3>
           <p>
-            Have a question or a project in mind? I'd love to hear from you.{" "}
+            Have a question or a project in mind? I&lsquo;d love to hear from
+            you.{" "}
           </p>
         </div>
         <div className="newsletter-contact">

@@ -1,3 +1,7 @@
 export default function Insights() {
-  return <div id="insights">Insights</div>;
+  return (
+    <div id="insights" className="insights">
+      Insights
+    </div>
+  );
 }
