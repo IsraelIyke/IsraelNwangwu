@@ -22,7 +22,7 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-      {/* <Progress /> */}
+      <Progress />
       <div className="blur"></div>
 
       <Nav />
