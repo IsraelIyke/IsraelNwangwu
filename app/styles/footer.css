@@ -47,8 +47,14 @@ footer .footer-git {
 }
 
 @media (max-width: 768px) {
+  footer {
+    height: 20rem;
+  }
   .footer-nav {
     flex-direction: column;
     align-items: center;
+  }
+  .footer-nav div {
+    margin: 0.3rem 0;
   }
 }
