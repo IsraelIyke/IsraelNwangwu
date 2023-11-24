@@ -1,7 +1,7 @@
 .portfolio {
   position: relative;
   height: 35rem;
-  background-color: white;
+  background-color: #f7f7f7ff;
   display: flex;
   flex-direction: column;
   align-items: center;

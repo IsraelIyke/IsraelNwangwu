@@ -1,6 +1,5 @@
 export default function SkillsCard(props) {
   const progress = (100 - props.percent) * 4;
-  console.log(2);
   return (
     <div className="skillsCard">
       <div className="skills-card-text">{props.title}</div>

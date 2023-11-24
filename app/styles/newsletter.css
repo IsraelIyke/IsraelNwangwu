@@ -1,0 +1,66 @@
+.newsletter {
+  display: flex;
+  justify-content: space-between;
+  height: 30rem;
+  background-color: #ffd3d0ff;
+  padding: 3rem 10rem;
+}
+.newsletter-input {
+  display: flex;
+  flex-direction: column;
+}
+.newsletter-input input {
+  height: 3rem;
+  width: 28rem;
+  margin: 0.6rem 0;
+  padding: 0 1rem;
+  font-size: 0.8rem;
+}
+.newsletter-input textarea {
+  height: 8rem;
+  max-height: 9rem;
+  font-size: 0.8rem;
+  padding: 1rem 1rem;
+  margin: 0.6rem 0;
+}
+.newsletter-input button {
+  background-color: #1f1f1fff;
+  width: 8rem;
+  height: 3rem;
+  color: white;
+  margin: 0.6rem 0;
+  font-size: 0.8rem;
+}
+.newsletter-contact {
+  display: flex;
+  flex-direction: column;
+}
+.newsletter-cta h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.newsletter-cta p {
+  font-size: 0.9rem;
+  margin: 0.6rem 0 3rem 0;
+  color: rgb(59, 59, 59);
+}
+.newsletter-contact div {
+  display: flex;
+  align-items: center;
+  margin: 0.8rem 0;
+}
+.newsletter-contact p {
+  font-size: 0.8rem;
+  margin-left: 0.6rem;
+}
+.newsletter-social {
+  display: flex;
+  margin-top: 4rem;
+}
+.newsletter-social a {
+  margin-right: 0.5rem;
+  font-size: 1rem;
+  background-color: white;
+  padding: 0.4rem;
+  border-radius: 1rem;
+}
