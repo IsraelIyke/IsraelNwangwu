@@ -57,7 +57,7 @@ const TestimonialSlider = () => {
   }, [currentIndex]);
 
   return (
-    <div className="testimonialSlider testimonial">
+    <div id="testimonial" className="testimonialSlider testimonial">
       <Image
         src="/assets/semi-circle.png"
         alt="semi-circle"
