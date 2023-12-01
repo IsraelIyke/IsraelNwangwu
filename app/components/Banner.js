@@ -15,7 +15,9 @@ export default function Banner() {
           something extraordinary together.
         </div>
         <div className="banner-cta-btn">
-          <button className="banner-hire-me">Hire Me</button>
+          <a href="mailto:nwangwujeremy@gmail.com">
+            <button className="banner-hire-me">Hire Me</button>
+          </a>
           <a href="/CV/Israel-Nwangwu.pdf" download="Israel_Nwangwu_CV.pdf">
             <button className="banner-resume">Resume</button>
           </a>
