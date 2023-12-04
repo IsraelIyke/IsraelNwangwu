@@ -18,7 +18,7 @@ export default function Banner() {
           <a href="mailto:nwangwujeremy@gmail.com">
             <button className="banner-hire-me">Hire Me</button>
           </a>
-          <a href="/CV/Israel-Nwangwu.pdf" download="Israel_Nwangwu_CV.pdf">
+          <a href="/CV/Nwangwu-Israel-CV.pdf" download="Nwangwu-Israel-CV.pdf">
             <button className="banner-resume">Resume</button>
           </a>
         </div>
