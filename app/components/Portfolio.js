@@ -36,7 +36,7 @@ const card = [
     id: 6,
     img: "/images/google.png",
     title: "Advanced Google Platform",
-    link: "/https://google-like-a-pro.vercel.app/",
+    link: "https://google-like-a-pro.vercel.app/",
   },
 ];
 
