@@ -41,7 +41,7 @@ export default function Nav() {
           <div>Insights</div>
         </Link>
       </div>
-      <div className="nav-btn mobile ml-[5rem]">
+      <div className="nav-btn mobile">
         <button>Let&rsquo;s Talk</button>
       </div>
       <Image
