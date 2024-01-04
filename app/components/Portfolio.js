@@ -28,9 +28,9 @@ const card = [
   },
   {
     id: 5,
-    img: "/images/cv.png",
+    img: "/images/cv2.png",
     title: "CV Generator Platform",
-    link: "https://resume-eta-dusky.vercel.app/account",
+    link: "https://cv-v2-ten.vercel.app/",
   },
   {
     id: 6,
