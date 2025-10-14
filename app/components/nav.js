@@ -15,9 +15,9 @@ export default function Nav() {
   // will work on animation
   return (
     <nav id="nav">
-      <div className="nav-logo">
+     <a href="/"> <div className="nav-logo">
         Ezy<span>Sphere</span>
-      </div>
+      </div></a>
       {!isMoved ? (
         <GiHamburgerMenu className="nav-menu desktop" onClick={handleMove} />
       ) : (
