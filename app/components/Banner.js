@@ -5,32 +5,31 @@ export default function Banner() {
   return (
     <div id="banner" className="banner-container">
       <div className="banner-text">
-        <div className="banner-role">FrontEnd Developer</div>
+        <div className="banner-role">Software Developer</div>
         <div className="banner-intro">Hi There, I&rsquo;m</div>
         <div className="banner-name">Israel Nwangwu</div>
         <div className="banner-cta">
           Welcome to my showcase of immersive digital experiences. Dive into my
-          portfolio to explore the dynamic world of frontend development, where
-          creativity meets functionality. Let&quot;s collaborate and craft
+          portfolio to explore the dynamic world of software development, where
+          creativity meets functionality. Let&apos;s collaborate and craft
           something extraordinary together.
         </div>
         <div className=" flex flex-col items-start">
           <div className="banner-cta-btn">
             <a
-              href="/images/cert.png"
-              download="Nwangwu-Israel-Certification.png"
-            >
+              href="https://drive.google.com/drive/folders/1RDXknPis5x9BfbGS1uEBx4fmoXTub2Or?usp=drive_link"
+              >
               <button className="banner-resume">Certification</button>
             </a>
             <a
-              href="/CV/Nwangwu-Israel-CV.pdf"
-              download="Nwangwu-Israel-CV.pdf"
+              href="/CV/Nwangwu_Israel_CV.pdf"
+              download="Nwangwu_Israel_CV.pdf"
             >
               <button className="banner-resume ml-[1rem]">Resume</button>
             </a>
           </div>
           <div className="">
-            <a href="mailto:nwangwujeremy@gmail.com">
+            <a href="mailto:nwangwuisrael@gmail.com">
               <button className="banner-hire-me">Hire Me</button>
             </a>
           </div>
