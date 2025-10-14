@@ -2,23 +2,36 @@ import React from "react";
 import PortfolioCard from "./PortfolioCard";
 
 const card = [
+ 
   {
     id: 1,
+    img: "/images/varlc.png",
+    title: "Educational Platform",
+    link: "https://www.varlc.com/",
+  },
+   {
+    id: 2,
+    img: "/images/ezynotify2.png",
+    title: "Telegram Notification Bot",
+    link: "https://t.me/ezynotify_bot",
+  },
+ {
+    id: 3,
+    img: "/images/braxxor.png",
+    title: "Water Material Site",
+    link: "https://www.braxxor.com/",
+  },
+   {
+    id: 3,
     img: "/images/telectify.png",
     title: "Internet of Things Platform",
     link: "https://telectify.vercel.app/",
   },
-  {
+    {
     id: 2,
     img: "/images/ezynotify.png",
     title: "Notification Platform",
     link: "https://ezynotify.pages.dev/",
-  },
-  {
-    id: 3,
-    img: "/images/varlc.png",
-    title: "Educational Platform",
-    link: "https://www.varlc.com/",
   },
   {
     id: 4,
@@ -46,7 +59,7 @@ export default function Portfolio() {
       <div className="portfolio-bg"></div>
       <div className="portfolio-container">
         <h3 className="portfolio-title">My Portfolio</h3>
-        <p>Explore some of my web dev services</p>
+        <p>Explore some of my Dev services</p>
         <div className="portfolio-grid">
           {card.map((items) => (
             <PortfolioCard
