@@ -81,10 +81,10 @@ const TestimonialSlider = () => {
               width={35}
               className="testimonial-image"
             /> */}
-            <div
-              className="testimonial-image"
-              style={{ backgroundColor: "white", height: 35, width: 35 }}
-            ></div>
+            // <div
+            //   className="testimonial-image"
+            //   style={{ backgroundColor: "white", height: 35, width: 35 }}
+            // ></div>
             <strong>{testimonialData[currentIndex].name}</strong>/
             <p>{testimonialData[currentIndex].role}</p>
           </span>
