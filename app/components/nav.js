@@ -41,9 +41,7 @@ export default function Nav() {
           <div>Insights</div>
         </Link>
       </div>
-      <div className="nav-btn mobile">
-        <button>Let&rsquo;s Talk</button>
-      </div>
+     
       <Image
         src="/assets/semi-circle.png"
         alt="semi-circle"
