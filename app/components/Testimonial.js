@@ -74,17 +74,6 @@ const TestimonialSlider = () => {
         <div className="slide">
           <p>{testimonialData[currentIndex].message}</p>
           <span>
-            {/* <Image
-              src="/images/testimonial.jpg"
-              alt="testimonial"
-              height={35}
-              width={35}
-              className="testimonial-image"
-            /> */}
-            // <div
-            //   className="testimonial-image"
-            //   style={{ backgroundColor: "white", height: 35, width: 35 }}
-            // ></div>
             <strong>{testimonialData[currentIndex].name}</strong>/
             <p>{testimonialData[currentIndex].role}</p>
           </span>
