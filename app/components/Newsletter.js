@@ -28,22 +28,19 @@ export default function Newsletter() {
         <div className="newsletter-contact">
           <div>
             <BiSolidPhoneCall />
-            <p>+234 703 1658 331</p>
+            <p>+234 806 8430 268</p>
           </div>
           <div>
             <MdEmail />
-            <p>nwangwujeremy@gmail.com</p>
+            <p>nwangwuisrael@gmail.com</p>
           </div>
-          <div>
-            <IoLocationSharp />
-            <p>167 Ogurugu Road, Enugu State, Nigeria.</p>
-          </div>
+         
         </div>
         <div className="newsletter-social">
           <Link href="https://youtube.com/@reactNextLib?si=2PuVIjBwahVxwBWQ">
             <BsYoutube />
           </Link>
-          <Link href="https://www.linkedin.com/in/nwangwu-israel-b2323a181/">
+          <Link href="https://www.linkedin.com/in/israel-ikechukwu-nwangwu/">
             <FaLinkedin />
           </Link>
           <Link href="https://github.com/IsraelIyke/">
