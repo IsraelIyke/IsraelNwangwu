@@ -51,13 +51,13 @@ export default function Newsletter() {
           </Link>
         </div>
       </div>
-      <div className="newsletter-input">
-        <input placeholder="First Name" />
-        <input placeholder="Email" />
-        <input placeholder="Phone Number" />
-        <textarea placeholder="Your Message" />
-        <button>Send Message</button>
-      </div>
+      // <div className="newsletter-input">
+      //   <input placeholder="First Name" />
+      //   <input placeholder="Email" />
+      //   <input placeholder="Phone Number" />
+      //   <textarea placeholder="Your Message" />
+      //   <button>Send Message</button>
+      // </div>
     </div>
   );
 }
