@@ -73,10 +73,7 @@ export default function Nav() {
               <div>Insights</div>
             </Link>
           </div>
-          // <div className="nav-btn">
-          //   <button>Let&rsquo;s Talk</button>
-          // </div>
-        </div>
+         </div>
       </div>
     </nav>
   );
