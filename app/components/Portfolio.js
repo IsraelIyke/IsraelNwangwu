@@ -5,8 +5,8 @@ const card = [
  
   {
     id: 1,
-    img: "/images/varlc.png",
-    title: "Educational Platform",
+    img: "/images/varlc2.png",
+    title: "Edtech Tutorial Platform",
     link: "https://www.varlc.com/",
   },
    {
