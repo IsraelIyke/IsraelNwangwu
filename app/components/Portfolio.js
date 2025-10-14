@@ -51,6 +51,12 @@ const card = [
     title: "Advanced Google Platform",
     link: "https://google-like-a-pro.vercel.app/",
   },
+  {
+    id: 7,
+    img: "/images/spfoods.png",
+    title: "Food Delivery Demo",
+    link: "https://spfoodchain.vercel.app/",
+  },
 ];
 
 export default function Portfolio() {
