@@ -11,23 +11,28 @@ const card = [
     title: "React and Next js",
     percent: 95,
   },
-  {
+   {
     id: 3,
+    title: "Nodejs and PHP",
+    percent: 95,
+  },
+  {
+    id: 4,
     title: "Tailwind and Bootstrap",
     percent: 76,
   },
   {
-    id: 4,
+    id: 5,
     title: "Git and Github",
     percent: 84,
   },
   {
-    id: 5,
+    id: 6,
     title: "Collaboration and Problem Solving",
     percent: 64,
   },
   {
-    id: 6,
+    id: 7,
     title: "Responsive design",
     percent: 90,
   },
@@ -37,7 +42,7 @@ export default function Skills() {
     <div id="skills" className="skills">
       <h3>Core Dev Skills</h3>
       <p>
-        As a frontend developer, I excel in React, Next.js, and Tailwind CSS. My
+        As a software developer, I excel in React, Next.js, Nodejs, PHP and Tailwind CSS. My
         strength lies in collaborative problem-solving, responsive design, and
         proficient use of Git/GitHub for version control. I&lsquo;m committed to
         delivering visually appealing, high-performance web applications.
