@@ -71,7 +71,7 @@ export default function Portfolio() {
           ))}
         </div>
       </div>
-           <br/><br/><br/><br/><br/><br/>
+           <div style={{height: "10rem"}}></div>
     </div>
   );
 }
