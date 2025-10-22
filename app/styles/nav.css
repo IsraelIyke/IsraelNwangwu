@@ -22,7 +22,7 @@ nav {
   font-size: 110%;
 }
 .nav-logo {
-  z-index: 5;
+  z-index: 15;
 }
 .nav-btn {
   background-color: #1f1f1fff;
@@ -47,6 +47,7 @@ nav {
     height: 4rem;
     font-size: 0.9rem;
     padding: 0 1rem;
+    position: relative;
   }
   .nav-menu {
     font-size: 1.6rem;
