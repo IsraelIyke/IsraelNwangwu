@@ -1,6 +1,6 @@
 .portfolio {
   position: relative;
-  height: 55rem;
+  height: 45rem;
   background-color: #f7f7f7ff;
   display: flex;
   flex-direction: column;
@@ -86,5 +86,6 @@
   }
   .portfolio {
     margin-bottom: 8rem;
+      height: 65rem;
   }
 }
