@@ -75,7 +75,7 @@
 
 @media (max-width: 768px) {
   .newsletter {
-    height: 46rem;
+    height: 23rem;
     flex-direction: column;
     padding: 2rem 3rem;
     text-align: center;
