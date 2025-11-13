@@ -22,7 +22,7 @@ export default function Banner() {
               <button className="banner-resume">Certification</button>
             </a>
             <a
-              href="/CV/Nwangwu_Israel_CV.pdf"
+              href="/CV/CV_NWANGWU_ISRAEL_IKECHUKWU.pdf"
               download="Nwangwu_Israel_CV.pdf"
             >
               <button className="banner-resume ml-[1rem]">Resume</button>
