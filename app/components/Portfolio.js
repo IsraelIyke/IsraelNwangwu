@@ -33,12 +33,12 @@ const card = [
     title: "Notification Platform",
     link: "https://ezynotify.pages.dev/",
   },
-  {
-    id: 4,
-    img: "/images/dev.png",
-    title: "Profile Generator Platform",
-    link: "https://dp-gen-devfest.vercel.app/",
-  },
+  // {
+  //   id: 4,
+  //   img: "/images/dev.png",
+  //   title: "Profile Generator Platform",
+  //   link: "https://dp-gen-devfest.vercel.app/",
+  // },
   {
     id: 5,
     img: "/images/cv2.png",
@@ -51,12 +51,12 @@ const card = [
     title: "Advanced Google Platform",
     link: "https://google-like-a-pro.vercel.app/",
   },
-  {
-    id: 7,
-    img: "/images/spfoods.png",
-    title: "Food Delivery Demo",
-    link: "https://spfoodchain.vercel.app/",
-  },
+  // {
+  //   id: 7,
+  //   img: "/images/spfoods.png",
+  //   title: "Food Delivery Demo",
+  //   link: "https://spfoodchain.vercel.app/",
+  // },
 ];
 
 export default function Portfolio() {
