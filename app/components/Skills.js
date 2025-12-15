@@ -29,7 +29,7 @@ const card = [
   {
     id: 6,
     title: "Collaboration and Problem Solving",
-    percent: 64,
+    percent: 94,
   },
   {
     id: 7,
