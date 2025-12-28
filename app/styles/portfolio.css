@@ -1,6 +1,7 @@
 .portfolio {
   position: relative;
-  height: 45rem;
+  height: fit-content;
+  padding-bottom: 5rem;
   background-color: #f7f7f7ff;
   display: flex;
   flex-direction: column;
