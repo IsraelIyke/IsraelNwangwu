@@ -5,19 +5,19 @@ const card = [
  
   {
     id: 1,
-    img: "/images/varlc2.png",
+    img: "/images/varlcproject.png",
     title: "Edtech Tutorial Platform",
     link: "https://www.varlc.com/",
   },
    {
     id: 2,
-    img: "/images/ezynotify2.png",
+    img: "/images/ezynotifytg.png",
     title: "Telegram Notification Bot",
     link: "https://t.me/ezynotify_bot",
   },
  {
     id: 3,
-    img: "/images/braxxor.png",
+    img: "/images/braxxorwb.png",
     title: "Water Material Site",
     link: "https://www.braxxor.com/",
   },
@@ -29,7 +29,7 @@ const card = [
   },
   {
     id: 5,
-    img: "/images/spfoods.png",
+    img: "/images/spfood.png",
     title: "Food Delivery Demo",
     link: "https://spfoodchain.vercel.app/",
   },
