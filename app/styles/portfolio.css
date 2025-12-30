@@ -85,7 +85,7 @@
     margin-top: 3rem;
   }
   .portfolio {
-    margin-bottom: 8rem;
-      height: 60rem;
+    margin-bottom: 4rem;
+    height: fit-content;
   }
 }
