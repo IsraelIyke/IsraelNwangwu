@@ -35,25 +35,31 @@ const card = [
   },
  {
     id: 6,
+    img: "/images/jayvee.png",
+    title: "GIS and Engr Consultant",
+    link: "https://jayveeconsultants.vercel.app/",
+  },
+ {
+    id: 7,
     img: "/images/telectify.png",
     title: "Internet of Things Platform",
     link: "https://telectify.vercel.app/",
   },
     {
-    id: 7,
+    id: 8,
     img: "/images/ezynotify.png",
     title: "Notification Platform",
     link: "https://ezynotify.pages.dev/",
   },
   
   {
-    id: 8,
+    id: 9,
     img: "/images/cv2.png",
     title: "CV Generator Platform",
     link: "https://cv-v2-ten.vercel.app/",
   },
   {
-    id: 9,
+    id: 10,
     img: "/images/google.png",
     title: "Advanced Google Platform",
     link: "https://google-like-a-pro.vercel.app/",
