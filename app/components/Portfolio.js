@@ -25,7 +25,7 @@ const card = [
     id: 4,
     img: "/images/flowvahub.png",
     title: "Flowva React Assessment",
-    link: "flowva-assessment.vercel.app/",
+    link: "https://flowva-assessment.vercel.app/",
   },
   {
     id: 5,
