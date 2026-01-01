@@ -1,53 +1,72 @@
+"use client";
+import React from "react";
+import { motion } from "framer-motion";
 import InsightCard from "./InsightCard";
 
 const insights = [
   {
     id: 1,
-    date: "3/11/2023",
-    title: "Why Signals Are Better Than React Hooks",
-    description: "",
-    link: "https://www.youtube.com/watch?v=SO8lBVWF2Y8",
-    img: "/images/signal-vs-hooks.png",
+    date: "Sept 2024",
+    title: "The Future of Frontend is Changing (v0 & Shadcn)",
+    link: "https://www.youtube.com/watch?v=TBIjgBVFjVI",
+    img: "https://img.youtube.com/vi/TBIjgBVFjVI/maxresdefault.jpg", // Dynamic YT Thumb
+    tag: "Trends",
   },
   {
     id: 2,
-    date: "24/11/2023",
-    title: "Keeping up with CSS: The features released in 2023",
-    description: "",
-    link: "https://www.youtube.com/watch?v=LGRogkgRrOs&pp=ygUNa2VsdmluIHBvd2VsbA%3D%3D",
-    img: "/images/new-css-features.png",
+    date: "Feb 2025",
+    title: "The Ultimate Tech Stack for 2025",
+    link: "https://www.youtube.com/watch?v=DW42HUD8qOQ",
+    img: "https://img.youtube.com/vi/DW42HUD8qOQ/maxresdefault.jpg",
+    tag: "Career",
   },
-
   {
     id: 3,
-    date: "08/09/2023",
-    title: "Bun is disrupting JavaScript land",
-    description: "",
-    link: "https://www.youtube.com/watch?v=dWqNgzZwVJQ",
-    img: "/images/bun-first-look.png",
+    date: "Aug 2024",
+    title: "Is Web Development still viable in 2025?",
+    link: "https://www.youtube.com/watch?v=xTuf6DCDvtE",
+    img: "https://img.youtube.com/vi/xTuf6DCDvtE/maxresdefault.jpg",
+    tag: "Analysis",
   },
 ];
 
 export default function Insights() {
   return (
-    <div id="insights" className="insights">
-      <h3>Dev Insights and Inspiration</h3>
-      <p>
-        Discover industry insights, expert tips and dev Inspiration. Stay
-        updated with the latest trend in web development
-      </p>
-      <div className="insights-container">
-        {insights.map((items) => (
-          <InsightCard
-            key={items.id}
-            date={items.date}
-            title={items.title}
-            description={items.description}
-            link={items.link}
-            img={items.img}
-          />
-        ))}
+    <section id="insights" className="py-24 bg-white">
+      <div className="container mx-auto px-6">
+        {/* Section Header */}
+        <div className="max-w-3xl mb-16">
+          <motion.h2
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            className="text-4xl md:text-6xl font-black text-slate-900 tracking-tighter"
+          >
+            Dev <span className="text-blue-600">Radar.</span>
+          </motion.h2>
+          <p className="text-gray-500 mt-6 text-md md:text-lg font-light leading-relaxed">
+            I stay at the forefront of the ecosystem by constantly analyzing new
+            shifts in
+            <span className="text-slate-900 font-medium">
+              {" "}
+              performance, DX, and AI-driven development.
+            </span>
+          </p>
+        </div>
+
+        {/* Horizontal Scroll / Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          {insights.map((item, idx) => (
+            <motion.div
+              key={item.id}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: idx * 0.1 }}
+            >
+              <InsightCard {...item} />
+            </motion.div>
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 }

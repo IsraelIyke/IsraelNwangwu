@@ -1,15 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import "./styles/nav.css";
-import "./styles/banner.css";
-import "./styles/about.css";
-import "./styles/portfolio.css";
-import "./styles/skills.css";
-import "./styles/testimonial.css";
-import "./styles/insights.css";
-import "./styles/newsletter.css";
-import "./styles/footer.css";
-
+import "animate.css";
+import AOSProvider from "./components/AOSProvider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -20,7 +12,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <AOSProvider>{children}</AOSProvider>
+      </body>
     </html>
   );
 }

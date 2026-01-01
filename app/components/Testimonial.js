@@ -1,6 +1,8 @@
 "use client";
-import Image from "next/image";
 import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import { BiSolidQuoteLeft } from "react-icons/bi";
 
 const testimonialData = [
   {
@@ -12,8 +14,8 @@ const testimonialData = [
   },
   {
     id: 2,
-    name: "Uche O.",
-    role: "Client",
+    name: "Uche Ogbodo",
+    role: "Employer",
     message:
       "Working with Israel was a pleasure. He seamlessly translated our design concepts into a functional and visually stunning website. His attention to design principles is truly commendable.",
   },
@@ -35,54 +37,123 @@ const testimonialData = [
 
 const TestimonialSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [direction, setDirection] = useState(0); // -1 for left, 1 for right
 
-  const handlePrev = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? testimonialData.length - 1 : prevIndex - 1
+  const handleNext = () => {
+    setDirection(1);
+    setCurrentIndex((prev) =>
+      prev === testimonialData.length - 1 ? 0 : prev + 1
     );
   };
 
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === testimonialData.length - 1 ? 0 : prevIndex + 1
+  const handlePrev = () => {
+    setDirection(-1);
+    setCurrentIndex((prev) =>
+      prev === 0 ? testimonialData.length - 1 : prev - 1
     );
   };
 
   useEffect(() => {
-    const intervalId = setInterval(() => {
-      handleNext();
-    }, 5000);
-
-    return () => clearInterval(intervalId);
+    const timer = setInterval(handleNext, 6000);
+    return () => clearInterval(timer);
   }, [currentIndex]);
 
-  return (
-    <div id="testimonial" className="testimonialSlider testimonial">
-      <Image
-        src="/assets/semi-circle.png"
-        alt="semi-circle"
-        width={100}
-        height={100}
-        className="testimonial-semi-circle"
-      />
+  const variants = {
+    enter: (direction) => ({
+      x: direction > 0 ? 100 : -100,
+      opacity: 0,
+    }),
+    center: {
+      x: 0,
+      opacity: 1,
+    },
+    exit: (direction) => ({
+      x: direction < 0 ? 100 : -100,
+      opacity: 0,
+    }),
+  };
 
-      <h2>Testimonials</h2>
-      <div className="sliderContainer">
-        <button onClick={handlePrev} className="arrowButton prev">
-          &lt;
-        </button>
-        <div className="slide">
-          <p>{testimonialData[currentIndex].message}</p>
-          <span>
-            <strong>{testimonialData[currentIndex].name}</strong>/
-            <p>{testimonialData[currentIndex].role}</p>
-          </span>
-        </div>
-        <button onClick={handleNext} className="arrowButton next">
-          &gt;
-        </button>
+  return (
+    <section
+      id="testimonial"
+      className="relative py-20 md:py-24 bg-slate-900 overflow-hidden"
+    >
+      {/* Decorative Background Icon */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[20rem] text-white/[0.03] pointer-events-none select-none">
+        <BiSolidQuoteLeft />
       </div>
-    </div>
+
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="max-w-4xl mx-auto text-center">
+          <motion.span
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            className="text-[#fc462a] font-bold tracking-[0.3em] uppercase text-xs mb-12 md:mb-6 block"
+          >
+            Client Voice
+          </motion.span>
+
+          <div className="relative h-[250px] md:h-[250px] flex items-center justify-center">
+            <AnimatePresence initial={false} custom={direction} mode="wait">
+              <motion.div
+                key={currentIndex}
+                custom={direction}
+                variants={variants}
+                initial="enter"
+                animate="center"
+                exit="exit"
+                transition={{ duration: 0.5, ease: "easeInOut" }}
+                className="absolute w-full"
+              >
+                <p className="text-xl md:text-4xl font-medium text-white leading-relaxed tracking-tight italic">
+                  "{testimonialData[currentIndex].message}"
+                </p>
+
+                <div className="mt-6 md:mt-10 flex flex-col items-center">
+                  <div className="w-12 h-1 bg-blue-600 mb-6 rounded-full" />
+                  <h4 className="text-xl font-black text-white">
+                    {testimonialData[currentIndex].name}
+                  </h4>
+                  <p className="text-blue-400 font-bold text-sm uppercase tracking-widest mt-1">
+                    {testimonialData[currentIndex].role}
+                  </p>
+                </div>
+              </motion.div>
+            </AnimatePresence>
+          </div>
+
+          {/* Navigation Controls */}
+          <div className="flex items-center justify-center gap-8 mt-16">
+            <button
+              onClick={handlePrev}
+              className="w-14 h-14 rounded-full border border-white/10 flex items-center justify-center text-white hover:bg-white hover:text-slate-900 transition-all active:scale-90"
+            >
+              <FiChevronLeft size={24} />
+            </button>
+
+            <div className="flex gap-2">
+              {testimonialData.map((_, index) => (
+                <div
+                  key={index}
+                  className={`h-1.5 transition-all duration-500 rounded-full ${
+                    index === currentIndex
+                      ? "w-8 bg-[#fc462a]"
+                      : "w-2 bg-white/20"
+                  }`}
+                />
+              ))}
+            </div>
+
+            <button
+              onClick={handleNext}
+              className="w-14 h-14 rounded-full border border-white/10 flex items-center justify-center text-white hover:bg-white hover:text-slate-900 transition-all active:scale-90"
+            >
+              <FiChevronRight size={24} />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 };
 
