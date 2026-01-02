@@ -11,7 +11,9 @@ import { FiSend } from "react-icons/fi";
 
 export default function Contact() {
   // Replace 'YOUR_FORM_ID' with the ID given by Formspree
-  const [state, handleSubmit] = useForm(process.env.FORMSPREE_FORM_ID);
+  const [state, handleSubmit] = useForm(
+    process.env.NEXT_PUBLIC_FORMSPREE_FORM_ID
+  );
 
   return (
     <section
