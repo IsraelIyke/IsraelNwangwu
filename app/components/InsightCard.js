@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
 import { BsPlayCircleFill } from "react-icons/bs";
 
 export default function InsightCard({ date, title, link, img, tag }) {
@@ -37,15 +36,12 @@ export default function InsightCard({ date, title, link, img, tag }) {
         </h3>
 
         <Link href={link} target="_blank" className="inline-block mt-6">
-          <motion.button
-            whileTap={{ scale: 0.95 }}
-            className="flex items-center gap-2 text-sm font-black uppercase tracking-tighter text-slate-900 group-hover:text-[#fc462a]"
-          >
+          <button className="flex items-center gap-2 text-sm font-black uppercase tracking-tighter text-slate-900 group-hover:text-[#fc462a]">
             Watch Analysis
             <span className="w-6 h-6 rounded-full border border-slate-300 flex items-center justify-center text-[10px]">
               →
             </span>
-          </motion.button>
+          </button>
         </Link>
       </div>
     </div>

@@ -78,7 +78,12 @@ const skillData = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="relative py-24 bg-white overflow-hidden">
+    <section
+      id="skills"
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      className="relative py-24 bg-white overflow-hidden"
+    >
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-3 gap-16">
           <div className=" h-fit space-y-6">

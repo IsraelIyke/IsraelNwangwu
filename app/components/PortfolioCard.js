@@ -6,10 +6,7 @@ import { FiArrowUpRight } from "react-icons/fi"; // Cleaner award-winning icon
 
 export default function PortfolioCard({ img, title, link, category }) {
   return (
-    <motion.div
-      whileHover={{ y: -10 }}
-      className="group relative bg-white rounded-[0.8rem] md:rounded-[1.5rem] overflow-hidden border border-slate-100 shadow-sm hover:shadow-2xl transition-all duration-500 mb-2 md:mb-0"
-    >
+    <div className="group relative bg-white rounded-[0.8rem] md:rounded-[1.5rem] overflow-hidden border border-slate-100 shadow-sm hover:shadow-2xl transition-all duration-500 mb-2 md:mb-0 hover:-mt-2 hover:-mb-2">
       {/* Image Container */}
       <div className="relative h-[110px] md:h-[180px] w-full overflow-hidden bg-slate-100">
         <Image
@@ -22,13 +19,9 @@ export default function PortfolioCard({ img, title, link, category }) {
         {/* Overlay on Hover */}
         <div className="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center backdrop-blur-sm">
           <Link href={link} target="_blank">
-            <motion.div
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              className="w-16 h-16 bg-white rounded-full flex items-center justify-center text-slate-900 shadow-xl"
-            >
+            <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center text-slate-900 shadow-xl hover:w-18 hover:h-18">
               <FiArrowUpRight size={30} />
-            </motion.div>
+            </div>
           </Link>
         </div>
 
@@ -54,6 +47,6 @@ export default function PortfolioCard({ img, title, link, category }) {
           <div className="w-2 h-2 rounded-full bg-[#fc462a] mt-2 group-hover:animate-ping" />
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }

@@ -1,6 +1,4 @@
 "use client";
-import Image from "next/image";
-import { motion } from "framer-motion";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import { SiFlutter, SiNextdotjs, SiNodedotjs } from "react-icons/si";
@@ -18,7 +16,9 @@ export default function About() {
     <section
       id="about"
       ref={ref}
-      className="relative py-10 lg:py-16 overflow-hidden bg-white -mt-[10rem] md:-mt-0 "
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      className="relative py-10 lg:py-16 overflow-hidden bg-white -mt-[12rem] md:-mt-0 "
     >
       {/* Background Glows */}
       <div className="absolute top-0 left-0 w-72 h-72 bg-blue-100/50 rounded-full blur-[120px] -z-10" />
@@ -32,9 +32,8 @@ export default function About() {
 
             {/* Flutter Feature Block */}
             <div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.2 }}
+              data-aos="zoom-in"
+              data-aos-delay="200"
               className="col-span-4 row-span-1 bg-slate-900 rounded-[2rem] p-6 flex flex-col justify-center items-center text-white shadow-xl"
             >
               <SiFlutter size={40} className="mb-2 animate-pulse" />
@@ -42,29 +41,27 @@ export default function About() {
                 Mobile Developer
               </span>
             </div>
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.2 }}
+            <div
+              data-aos="zoom-in"
+              data-aos-delay="400"
               className="col-span-4 row-span-1 bg-blue-600 rounded-[2rem] p-6 flex flex-col justify-center items-center text-white shadow-xl mt-20"
             >
               <SiNodedotjs size={40} className="mb-2 animate-pulse" />
               <span className="text-xs font-black uppercase tracking-tighter text-center">
                 Backend Developer
               </span>
-            </motion.div>
+            </div>
             {/* Next.js Feature Block */}
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.4 }}
+            <div
+              data-aos="zoom-in"
+              data-aos-delay="600"
               className="col-span-4 row-span-1 bg-slate-900 rounded-[2rem] p-6 flex flex-col justify-center items-center text-white shadow-xl  mt-40"
             >
               <SiNextdotjs size={40} className="mb-2" />
               <span className="text-xs font-black uppercase tracking-tighter text-center">
                 Web Developer
               </span>
-            </motion.div>
+            </div>
           </div>
 
           {/* RIGHT SIDE: CONTENT */}
@@ -72,14 +69,10 @@ export default function About() {
             <h2 className="text-4xl md:text-7xl font-black text-slate-900 leading-[0.9] tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">
               About
             </h2>
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              className="inline-flex items-center gap-2 px-4 py-3 md:py-1 rounded-full bg-slate-900 text-white font-bold text-[10px] uppercase tracking-[0.3em]"
-            >
+            <div className="inline-flex items-center gap-2 px-4 py-3 md:py-1 rounded-full bg-slate-900 text-white font-bold text-[10px] uppercase tracking-[0.3em]">
               <span className="w-2 h-2 bg-[#fc462a] rounded-full animate-ping" />
               The Developer
-            </motion.div>
+            </div>
 
             <p className="text-l md:text-xl text-gray-500 leading-relaxed font-light max-w-lg">
               I specialize in developing highly scalable and efficient digital
@@ -103,7 +96,7 @@ export default function About() {
                   className="relative group flex flex-col items-center"
                 >
                   <div className="text-4xl font-black text-slate-900 mb-1">
-                    {inView ? <CountUp end={stat.number} duration={3} /> : "0"}
+                    {inView ? <CountUp end={stat.number} duration={8} /> : "0"}
                     <span className="text-blue-600">{stat.suffix}</span>
                   </div>
                   <div className="text-[10px] text-center font-black text-gray-400 uppercase tracking-widest group-hover:text-blue-600 transition-colors">
@@ -120,10 +113,7 @@ export default function About() {
               download="Nwangwu_Israel_CV.pdf"
               className="pt-6"
             >
-              <motion.button
-                whileHover={{ x: 10 }}
-                className="flex items-center gap-4 group"
-              >
+              <button className="flex items-center gap-4 group hover:px-5">
                 <span className="w-12 h-12 rounded-full border border-slate-200 flex items-center justify-center group-hover:bg-slate-900 group-hover:text-white transition-all duration-300">
                   <svg
                     width="20"
@@ -139,7 +129,7 @@ export default function About() {
                 <span className="font-black uppercase tracking-widest text-sm text-slate-900">
                   Download Portfolio PDF
                 </span>
-              </motion.button>
+              </button>
             </a>
           </div>
         </div>

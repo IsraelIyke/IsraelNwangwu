@@ -85,13 +85,9 @@ const TestimonialSlider = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <motion.span
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            className="text-[#fc462a] font-bold tracking-[0.3em] uppercase text-xs mb-12 md:mb-6 block"
-          >
-            Client Voice
-          </motion.span>
+          <span className="text-[#fc462a] font-bold tracking-[0.3em] uppercase text-xs mb-12 md:mb-6 block">
+            What People Are Saying
+          </span>
 
           <div className="relative h-[250px] md:h-[250px] flex items-center justify-center">
             <AnimatePresence initial={false} custom={direction} mode="wait">

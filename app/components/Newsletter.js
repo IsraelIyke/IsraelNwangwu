@@ -18,6 +18,8 @@ export default function Contact() {
   return (
     <section
       id="contact"
+      data-aos="fade-up"
+      data-aos-easing="linear"
       className="relative py-24 bg-slate-50 overflow-hidden"
     >
       {/* Background Element */}

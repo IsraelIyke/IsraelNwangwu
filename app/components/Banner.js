@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
+import Link from "next/link";
 
 export default function Banner() {
   const ref = useRef(null);
@@ -49,7 +50,7 @@ export default function Banner() {
   return (
     <section
       ref={ref}
-      className="relative min-h-[120vh] md:min-h-[120vh] flex items-center justify-center overflow-hidden bg-[#fafafa] px-6 "
+      className="relative min-h-[120vh] md:min-h-[120vh] flex items-center justify-center overflow-hidden bg-[#fafafa] px-0 md:px-6 "
     >
       {/* Floating Background Text (Hidden on mobile via Tailwind + Transform disabled via JS) */}
       <motion.div
@@ -66,7 +67,7 @@ export default function Banner() {
           className="w-[100vw] lg:w-1/2 space-y-8 z-20 
             lg:relative absolute -top-[12rem] lg:top-auto left-0 lg:left-auto 
              lg:translate-x-0  lg:translate-y-0
-            lg:bg-transparent p-0"
+            lg:bg-transparent px-2 md:px-0"
         >
           {/* Glassmorphic effect for mobile */}
           <div
@@ -75,16 +76,16 @@ export default function Banner() {
             p-6 pr-10"
           >
             <div className="overflow-hidden">
-              <div className="overflow-hidden ">
-                <motion.span
-                  initial={{ y: 100 }}
-                  animate={{ y: 0 }}
-                  transition={{ duration: 0.8, ease: "easeOut" }}
-                  className="flex items-center gap-3 text-black font-mono font-extrabold tracking-widest uppercase text-[12px] mb-4"
-                >
+              <div
+                className="overflow-hidden animate__animated
+                  animate__fadeInLeft
+                  animate__slow
+                  animate__delay-1s"
+              >
+                <span className="flex items-center gap-3 text-black font-mono font-extrabold tracking-widest uppercase text-[12px] mb-4">
                   <span className="w-7 md:w-12 h-[1px] bg-black "></span>
                   Fullstack Software Engineer
-                </motion.span>
+                </span>
               </div>
             </div>
 
@@ -113,24 +114,26 @@ export default function Banner() {
             </p>
 
             <div className="flex flex-col gap-4 items-center mt-6">
-              <motion.a
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+              <Link
                 href="#portfolio"
-                className="px-8 py-4 bg-slate-900 text-white rounded-full font-bold 
+                className="animate__animated
+                  animate__fadeInUp
+                  animate__delay-0.4s px-8 py-4 bg-slate-900 text-white rounded-full font-bold 
                   shadow-2xl hover:bg-[#fc462a] transition-colors w-full sm:w-auto 
                   text-center text-sm md:text-md backdrop-blur-md bg-slate-900/90"
               >
                 View Projects
-              </motion.a>
-              <a
+              </Link>
+              <Link
                 href="mailto:nwangwuisrael@gmail.com"
-                className="font-bold border-b-2 border-slate-900 hover:text-blue-600 
+                className="animate__animated
+                  animate__fadeInUp
+                  animate__delay-1s font-bold border-b-2 border-slate-900 hover:text-blue-600 
                   hover:border-blue-600 transition-all text-center sm:text-left w-full 
                   sm:w-auto py-2"
               >
                 Get in touch
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -138,15 +141,15 @@ export default function Banner() {
           <div className="hidden lg:block">
             <div className="overflow-hidden">
               <div className="overflow-hidden">
-                <motion.span
-                  initial={{ y: 100 }}
-                  animate={{ y: 0 }}
-                  transition={{ duration: 0.8, ease: "easeOut" }}
-                  className="flex items-center gap-3 text-blue-600 font-mono tracking-widest uppercase text-sm"
+                <span
+                  className="animate__animated
+                  animate__fadeInLeft
+                  animate__slow
+                  animate__delay-0.4s flex items-center gap-3 text-blue-600 font-mono tracking-widest uppercase text-sm"
                 >
                   <span className="w-12 h-[1px] bg-blue-600"></span>
                   Fullstack Software Engineer
-                </motion.span>
+                </span>
               </div>
             </div>
 
@@ -166,20 +169,22 @@ export default function Banner() {
             </p>
 
             <div className="flex gap-6 items-center mt-10">
-              <motion.a
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+              <Link
                 href="#portfolio"
-                className="px-8 py-4 bg-slate-900 text-white rounded-full font-bold shadow-2xl hover:bg-[#fc462a] transition-colors"
+                className="animate__animated
+                  animate__fadeInUp
+                  animate__delay-0.8s px-8 py-4 bg-slate-900 text-white rounded-full font-bold shadow-2xl hover:bg-[#fc462a] transition-colors"
               >
                 View Projects
-              </motion.a>
-              <a
+              </Link>
+              <Link
                 href="mailto:nwangwuisrael@gmail.com"
-                className="font-bold border-b-2 border-slate-900 hover:text-blue-600 hover:border-blue-600 transition-all"
+                className="animate__animated
+                  animate__fadeInUp
+                  animate__delay-1s font-bold border-b-2 border-slate-900 hover:text-blue-600 hover:border-blue-600 transition-all"
               >
                 Get in touch
-              </a>
+              </Link>
             </div>
           </div>
         </motion.div>
@@ -187,10 +192,10 @@ export default function Banner() {
         {/* IMAGE COMPOSITION */}
         <div
           className="relative w-full lg:w-1/2 flex justify-center items-center 
-          min-h-[70vh] lg:min-h-auto -mt-[32rem] md:mt-0"
+          min-h-[70vh] lg:min-h-auto -mt-[32rem] md:mt-0 "
         >
           {/* THE HALO */}
-          <motion.div className="absolute z-0 w-[120%] h-[120%] flex justify-center items-center opacity-40 blur-[1px]">
+          <div className="absolute z-0 w-[120%] h-[120%] flex justify-center items-center opacity-40 blur-[1px]">
             <Image
               src="/assets/word-cloud.png"
               alt="Software Engineer Backdrop"
@@ -198,19 +203,23 @@ export default function Banner() {
               height={500}
               className="animate-pulse-slow"
             />
-          </motion.div>
+          </div>
 
           {/* MAIN PROFILE IMAGE */}
           <motion.div
             style={{ scale: imageScale }}
-            className="relative z-10 w-[280px] h-[350px] md:w-[450px] md:h-[550px]
+            className="relative z-10 w-[380px] h-[350px] md:w-[450px] md:h-[550px]
               lg:w-[450px] lg:h-[550px]"
           >
             <Image
               src="/images/profile.png"
               alt="Israel Nwangwu"
               fill
-              className="object-cover rounded-none md:rounded-[2rem] shadow-2xl grayscale hover:grayscale-0 transition-all duration-700"
+              className="animate__animated
+                  animate__zoomIn
+                  animate__delay-0.2s  animate__slow 
+                  
+                  object-cover rounded-none md:rounded-[2rem] shadow-2xl md:grayscale md:hover:grayscale-0 transition-all duration-700"
               priority
               sizes="(max-width: 768px) 280px, (max-width: 1024px) 450px, 450px"
             />

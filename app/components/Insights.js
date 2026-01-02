@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import { motion } from "framer-motion";
 import InsightCard from "./InsightCard";
 
 const insights = [
@@ -32,17 +31,22 @@ const insights = [
 
 export default function Insights() {
   return (
-    <section id="insights" className="py-24 bg-white">
+    <section
+      id="insights"
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      className="py-24 bg-white"
+    >
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="max-w-3xl mb-16">
-          <motion.h2
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            className="text-4xl md:text-6xl font-black text-slate-900 tracking-tighter"
+          <h2
+            className="animate__animated
+                  animate__fadeInLeft
+                  animate__delay-0.6s  animate__slow text-4xl md:text-6xl font-black text-slate-900 tracking-tighter"
           >
             Dev <span className="text-blue-600">Radar.</span>
-          </motion.h2>
+          </h2>
           <p className="text-gray-500 mt-6 text-md md:text-lg font-light leading-relaxed">
             I stay at the forefront of the ecosystem by constantly analyzing new
             shifts in
@@ -56,14 +60,15 @@ export default function Insights() {
         {/* Horizontal Scroll / Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {insights.map((item, idx) => (
-            <motion.div
+            <div
               key={item.id}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: idx * 0.1 }}
+              aos-data="fade-up"
+              aos-duration="500"
+              aos-delay={idx * 100}
+              aos-easing="linear"
             >
               <InsightCard {...item} />
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

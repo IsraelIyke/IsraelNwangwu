@@ -85,21 +85,26 @@ const projects = [
 
 export default function Portfolio() {
   return (
-    <section id="portfolio" className="relative py-10 md:py-24 bg-[#fffaf9]">
+    <section
+      id="portfolio"
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      className="relative py-10 md:py-24 bg-[#fffaf9]"
+    >
       {" "}
       {/* Soft blend of original peach */}
       <div className="container mx-auto px-6">
         {/* Header Section */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 md:mb-16 gap-6">
           <div className="max-w-xl">
-            <motion.span
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              className="text-blue-600 font-bold tracking-[0.2em] uppercase text-xs mb-4 block"
-            >
+            <span className="text-blue-600 font-bold tracking-[0.2em] uppercase text-xs mb-4 block">
               Proven Track Record
-            </motion.span>
-            <h2 className="text-4xl md:text-7xl font-black text-slate-900 tracking-tighter leading-none">
+            </span>
+            <h2
+              className="animate__animated
+                  animate__fadeInLeft
+                  animate__delay-0.6s  animate__slow  text-4xl md:text-7xl font-black text-slate-900 tracking-tighter leading-none"
+            >
               Featured <br /> <span className="text-[#fc462a]">Projects</span>
             </h2>
           </div>
@@ -113,22 +118,19 @@ export default function Portfolio() {
         </div>
 
         {/* Grid Section */}
-        <motion.div
-          layout
-          className="grid grid-cols-2 lg:grid-cols-3 gap-1 md:gap-8"
-        >
+        <div layout className="grid grid-cols-2 lg:grid-cols-3 gap-1 md:gap-8">
           {projects.map((item, index) => (
-            <motion.div
+            <div
               key={item.id}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1 }}
-              viewport={{ once: true }}
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-delay={index * 100}
+              data-aos-easing="linear"
             >
               <PortfolioCard {...item} />
-            </motion.div>
+            </div>
           ))}
-        </motion.div>
+        </div>
 
         {/* Bottom CTA */}
         <div className="mt-10 md:mt-20 text-center">
