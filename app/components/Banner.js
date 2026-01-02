@@ -80,9 +80,9 @@ export default function Banner() {
                   initial={{ y: 100 }}
                   animate={{ y: 0 }}
                   transition={{ duration: 0.8, ease: "easeOut" }}
-                  className="flex items-center gap-3 text-black md:text-blue-600 font-mono font-extrabold tracking-widest uppercase text-[12px] md:text-sm"
+                  className="flex items-center gap-3 text-black font-mono font-extrabold tracking-widest uppercase text-[12px] mb-4"
                 >
-                  <span className="w-7 md:w-12 h-[1px]  bg-black md:bg-blue-600 "></span>
+                  <span className="w-7 md:w-12 h-[1px] bg-black "></span>
                   Fullstack Software Engineer
                 </motion.span>
               </div>
@@ -112,7 +112,7 @@ export default function Banner() {
               </span>
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-6 items-center mt-3 md:mt-8">
+            <div className="flex flex-col gap-4 items-center mt-6">
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}

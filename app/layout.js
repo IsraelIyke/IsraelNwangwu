@@ -1,13 +1,13 @@
-import { Inter } from "next/font/google";
+import { Inter, Tilt_Neon } from "next/font/google"; // Grouped imports
 import "./globals.css";
 import "animate.css";
 import AOSProvider from "./components/AOSProvider";
-const inter = Inter({ subsets: ["latin"] });
-import { Tilt_Neon } from "next/font/google";
 
 const tiltNeon = Tilt_Neon({
   subsets: ["latin"],
   display: "swap",
+  // If the error persists, try adding weight: "400"
+  // though Tilt Neon is usually variable.
 });
 
 export const metadata = {
