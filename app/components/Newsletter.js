@@ -40,7 +40,7 @@ export default function Contact() {
                 whileInView={{ opacity: 1 }}
                 className="text-[#fc462a] font-bold tracking-[0.3em] uppercase text-xs mb-4 block"
               >
-                Let's Build Something
+                Let&apos;s Build Something
               </motion.span>
               <h2 className="text-4xl md:text-7xl font-black text-slate-900 tracking-tighter leading-none">
                 Get in <br /> <span className="text-blue-600">Touch.</span>
@@ -118,7 +118,7 @@ export default function Contact() {
                   Message Received!
                 </h3>
                 <p className="text-gray-500 mt-2">
-                  Thanks Israel, I'll get back to you shortly.
+                  Thanks Israel, I&apos;ll get back to you shortly.
                 </p>
                 <button
                   onClick={() => window.location.reload()}

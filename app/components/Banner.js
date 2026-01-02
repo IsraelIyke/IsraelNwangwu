@@ -59,7 +59,7 @@ export default function Banner() {
         SOFTWARE DEVELOPER
       </motion.div>
 
-      <div className="container mx-auto flex flex-col lg:flex-row items-center justify-center md:justify-between z-10 relative">
+      <div className="container mx-auto flex flex-col lg:flex-row  justify-center md:justify-between z-10 relative">
         {/* TEXT CONTENT */}
         <motion.div
           style={{ y: textY, opacity: contentOpacity }}
@@ -72,17 +72,17 @@ export default function Banner() {
           <div
             className="lg:hidden backdrop-blur-xl bg-white/30  
             rounded-3xl border border-white/40 shadow-[0_8px_32px_rgba(31,38,135,0.37)]
-            p-8 lg:p-0"
+            p-6 pr-10"
           >
             <div className="overflow-hidden">
-              <div className="overflow-hidden">
+              <div className="overflow-hidden ">
                 <motion.span
                   initial={{ y: 100 }}
                   animate={{ y: 0 }}
                   transition={{ duration: 0.8, ease: "easeOut" }}
                   className="flex items-center gap-3 text-black md:text-blue-600 font-mono font-extrabold tracking-widest uppercase text-[12px] md:text-sm"
                 >
-                  <span className="w-7 md:w-12 h-[1px] bg-black md:bg-blue-600 "></span>
+                  <span className="w-7 md:w-12 h-[1px]  bg-black md:bg-blue-600 "></span>
                   Fullstack Software Engineer
                 </motion.span>
               </div>
@@ -90,7 +90,7 @@ export default function Banner() {
 
             <h1
               className="text-3xl md:text-6xl lg:text-8xl font-black text-slate-900 
-              leading-none tracking-tighter mt-4"
+              leading-none tracking-tighter "
             >
               Israel <br />
               <span
@@ -150,7 +150,7 @@ export default function Banner() {
               </div>
             </div>
 
-            <h1 className="text-6xl md:text-8xl font-black text-slate-900 leading-none tracking-tighter">
+            <h1 className="text-6xl md:text-8xl font-black text-slate-900 leading-none tracking-tighter mt-4 mb-4">
               Israel <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">
                 Nwangwu
@@ -165,7 +165,7 @@ export default function Banner() {
               </span>
             </p>
 
-            <div className="flex gap-6 items-center">
+            <div className="flex gap-6 items-center mt-10">
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}

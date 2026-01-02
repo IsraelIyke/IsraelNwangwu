@@ -18,7 +18,7 @@ export default function About() {
     <section
       id="about"
       ref={ref}
-      className="relative py-10 lg:py-16 overflow-hidden bg-white -mt-[10rem] "
+      className="relative py-10 lg:py-16 overflow-hidden bg-white -mt-[10rem] md:-mt-0 "
     >
       {/* Background Glows */}
       <div className="absolute top-0 left-0 w-72 h-72 bg-blue-100/50 rounded-full blur-[120px] -z-10" />

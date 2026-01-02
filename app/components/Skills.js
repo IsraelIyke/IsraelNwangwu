@@ -96,8 +96,8 @@ export default function Skills() {
             </h2>
 
             <p className="text-lg text-gray-500 leading-relaxed font-light italic">
-              "Complexity is easy; the true craft lies in selecting the few
-              technologies that solve the many"
+              &quot;Complexity is easy; the true craft lies in selecting the few
+              technologies that solve the many&quot;
             </p>
 
             {/* The Legend/Explanation */}

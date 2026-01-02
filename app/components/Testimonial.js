@@ -106,7 +106,7 @@ const TestimonialSlider = () => {
                 className="absolute w-full"
               >
                 <p className="text-xl md:text-4xl font-medium text-white leading-relaxed tracking-tight italic">
-                  "{testimonialData[currentIndex].message}"
+                  &quot;{testimonialData[currentIndex].message}&quot;
                 </p>
 
                 <div className="mt-6 md:mt-10 flex flex-col items-center">

@@ -64,7 +64,7 @@ export default function Nav() {
             whileTap={{ scale: 0.95 }}
             className="px-6 py-2.5 bg-slate-900 text-white text-xs font-bold rounded-full shadow-lg shadow-blue-200/20"
           >
-            Let's Talk
+            Let&apos;s Talk
           </motion.button>
         </div>
 
