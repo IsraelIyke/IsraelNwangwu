@@ -98,7 +98,7 @@ export default function Footer() {
                   <FaGithub size={20} />
                 </Link>
                 <Link
-                  href="https://www.linkedin.com/in/nwangwu-israel-b2323a181/"
+                  href="https://www.linkedin.com/in/israel-ikechukwu-nwangwu"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   <FaLinkedinIn size={20} />
