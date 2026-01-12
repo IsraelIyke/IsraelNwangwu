@@ -16,9 +16,9 @@ export default function InsightCard({ date, title, link, img, tag }) {
         />
 
         {/* Play Overlay */}
-        <div className="absolute inset-0 bg-slate-900/20 group-hover:bg-slate-900/50 transition-colors flex items-center justify-center">
+        <Link href={link} target="_blank" className="absolute inset-0 bg-slate-900/20 group-hover:bg-slate-900/50 transition-colors flex items-center justify-center">
           <BsPlayCircleFill className="text-white/80 group-hover:text-[#fc462a] text-6xl transition-all transform group-hover:scale-110" />
-        </div>
+        </Link>
 
         {/* Category Tag */}
         <span className="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-tighter text-slate-900">
