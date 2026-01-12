@@ -124,7 +124,7 @@ export default function Portfolio() {
               key={item.id}
               data-aos="fade-up"
               data-aos-duration="500"
-              data-aos-delay={index * 300}
+              data-aos-delay={index * 200}
               data-aos-easing="linear"
             >
               <PortfolioCard {...item} />
