@@ -121,10 +121,11 @@ export default function Portfolio() {
           {projects.map((item, index) => (
             <div
               key={item.id}
-              data-aos="fade-up"
+              data-aos="fade-left"
               data-aos-duration="500"
-              data-aos-delay={index * 200}
-              data-aos-easing="linear"
+              data-aos-delay={200}
+              // data-aos-delay={index * 200}
+              // data-aos-easing="linear"
             >
               <PortfolioCard {...item} />
             </div>
@@ -132,7 +133,7 @@ export default function Portfolio() {
         </div>
 
         {/* Bottom CTA */}
-        <div className="mt-10 md:mt-20 text-center">
+        <div data-aos="fade-up" className="mt-10 md:mt-20 text-center">
           <p className="text-gray-400 mb-6">
             Need a custom solution built with speed?
           </p>
