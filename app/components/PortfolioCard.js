@@ -1,8 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
-import { FiArrowUpRight } from "react-icons/fi"; // Cleaner award-winning icon
+import { FiArrowUpRight } from "react-icons/fi"; 
 
 export default function PortfolioCard({ img, title, link, category }) {
   return (
