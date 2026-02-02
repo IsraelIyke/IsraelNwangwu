@@ -92,7 +92,7 @@ const projects = [
     img: "/images/telectify.png",
     title: "Internet of Things",
     link: "https://telectify.vercel.app",
-    category: ["IoT, Web"],
+    category: ["IoT", "Web"],
   },
    {
     id: 14,
