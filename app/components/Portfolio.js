@@ -70,7 +70,7 @@ const projects = [
     id: 10,
     img: "/images/padisquare.png",
     title: "Padisquare Flutter Assessment",
-    link: "https://flowva-assessment.vercel.app",
+    link: "https://github.com/IsraelIyke/padisquare",
     category: ["Mobile", "Assessment"],
   },
    {
@@ -98,7 +98,7 @@ const projects = [
     id: 14,
     img: "/images/estimateQ.png",
     title: "Building Material Estimator",
-    link: "https://flowva-assessment.vercel.app",
+    link: "",
     category: ["Mobile"],
   },
   {
