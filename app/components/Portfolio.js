@@ -111,7 +111,7 @@ const projects = [
   {
     id: 16,
     img: "/images/ezysphere.png",
-    title: "Personal Brand Website (Designed by AI)",
+    title: "Brand Website",
     link: "https://www.ezysphere.com/",
     category: ["Web"],
   },
