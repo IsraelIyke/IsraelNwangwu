@@ -138,7 +138,7 @@ const projects = [
   },
      {
     id: 20,
-    img: "/images/ezynotify.png",https://github.com/IsraelIyke/IsraelNwangwu/security
+    img: "/images/ezynotify.png",
     title: "Notification Platform",
     link: "https://ezynotify.pages.dev",
     category: ["Web"],
