@@ -98,7 +98,7 @@ const projects = [
     id: 14,
     img: "/images/lendsqr.png",
     title: "Lendsqr React Assessment",
-    link: "https://flowva-assessment.vercel.app",
+    link: "https://nwangwu-israel-ikechukwu-lendsqr-fe-test.vercel.app/login",
     category: ["Web", "Assessment"],
   },
    {
