@@ -157,14 +157,7 @@ const projects = [
     link: "https://google-like-a-pro.vercel.app",
     category: ["Web"],
   },
-  {
-    id: 23,
-    img: "/images/dev.png",
-    title: "Profile Generator",
-    link: "https://dp-gen-devfest.vercel.app",
-    category: ["Web"],
-  },
-];
+  ];
 export default function Portfolio() {
   const [activeTab, setActiveTab] = useState("All");
 
