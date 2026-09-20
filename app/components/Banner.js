@@ -234,7 +234,7 @@ export default function Banner() {
               <div className="text-xs text-gray-400 font-bold uppercase tracking-widest">
                 Experience
               </div>
-              <div className="text-2xl font-black text-slate-900">4+ Years</div>
+              <div className="text-2xl font-black text-slate-900">5+ Years</div>
             </motion.div>
           </motion.div>
         </div>
