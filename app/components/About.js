@@ -9,7 +9,7 @@ export default function About() {
   const stats = [
     { number: 25, suffix: "+", title: "Apps & Sites" },
     { number: 5, suffix: "+", title: "Years Experience" },
-    { number: 11, suffix: "", title: "Happy Clients" },
+    { number: 14, suffix: "", title: "Happy Clients" },
   ];
 
   return (
