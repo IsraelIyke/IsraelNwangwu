@@ -7,9 +7,9 @@ export default function About() {
   const { ref, inView } = useInView({ threshold: 0.3, triggerOnce: true });
 
   const stats = [
-    { number: 15, suffix: "+", title: "Apps & Sites" },
-    { number: 4, suffix: "+", title: "Years Experience" },
-    { number: 6, suffix: "", title: "Happy Clients" },
+    { number: 25, suffix: "+", title: "Apps & Sites" },
+    { number: 5, suffix: "+", title: "Years Experience" },
+    { number: 11, suffix: "", title: "Happy Clients" },
   ];
 
   return (
